@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============Google-font=============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- ============Google-font=============== -->
+    <!-- =============swiper-css=============== -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- =============swiper-css=============== -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/coustom.css">
+
+    <style>
+        input[type='checkbox'] {
+            accent-color: red;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class=" bg-white py-3">
+            <div class="container mx-auto">
+                <div class=" flex justify-between items-center">
+                    <div class="">
+                        <a href="#">
+                            <img class="w-52" src="./img/logo.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class=" flex items-center">
+                        <div class="">
+                            <a class=" bg-Pigment pt-1 pb-2 px-3 text-white  text-base rounded-md mr-3"
+                                href="#">Login</a>
+                        </div>
+                        <div class="">
+                            <a class=" bg-Black  pt-1 pb-2 px-3 text-white  text-base rounded-md" href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==============Header-end================= -->
+
+    <nav>
+        <div class=" bg-Pigment py-2">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-12 items-center">
+                    <div class=" col-span-6">
+                        <ul class=" flex justify-between items-center">
+                            <li><a class="text-white text-lg font-semibold" href="#">Home</a></li>
+                            <li><a class="text-white text-lg font-semibold" href="#">About Us</a></li>
+                            <li><a class="text-white text-lg font-semibold" href="#">Jobs(100+)</a></li>
+                            <li><a class="text-white text-lg font-semibold" href="employers.html">Employers(20+)</a>
+                            </li>
+                            <li><a class="text-white text-lg font-semibold" href="#">Candidates(1000+)</a></li>
+                            <li><a class="text-white text-lg font-semibold" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-span-6 ">
+                        <div class=" flex  justify-end items-center">
+                            <div class="mt-2 mr-4">
+                                <div class="">
+                                    <button class=" text-3xl text-white ">
+                                        <iconify-icon icon="material-symbols:circle-notifications"></iconify-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a class="bg-white  text-Rusian-Black py-2 px-3  font-semibold rounded-md "
+                                    href="#">Post
+                                    A Job +</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- =========================Nav-end======================= -->
+    <!-- ==================Hero============ -->
+    <section>
+        <div class="hero py-20" style="background-image: url('./img/em-hero.jpg');">
+            <div class="container mx-auto">
+                <h2 class=" text-white text-6xl text-center font bold">Employer Listing</h2>
+            </div>
+        </div>
+    </section>
+    <!-- ==================Hero============ -->
+
+    <!-- ===============Side-bar-and content============= -->
+
+    <section>
+        <div class="container mx-auto mt-20">
+            <div class="grid grid-cols-12 gap-10">
+                <div class=" col-span-3">
+                    <div class="">
+                        <div class="px-3 py-5 border border-Rusian-Black">
+                            <h2 class=" text-Rusian-Black text-lg  text-center font-semibold">Locations</h2>
+                            <div class="">
+                                <form action="">
+                                    <div class=" border border-Pigment px-2 rounded-sm py-2 mt-5 ">
+                                        <select class="w-full focus:outline-none border-none  text-Rusian-Black" name=""
+                                            id="">
+                                            <option value="">Select Country</option>
+                                            <option value="">Afghanistan</option>
+                                            <option value="">Albania</option>
+                                            <option value="">Algeria</option>
+                                            <option value="">American Samoa</option>
+                                        </select>
+                                    </div>
+                                    <div class=" border border-Pigment px-2 rounded-sm py-2 mt-5 ">
+                                        <select class="w-full focus:outline-none border-none  text-Rusian-Black" name=""
+                                            id="">
+                                            <option value="">State</option>
+                                            <option value="">Dhaka</option>
+                                            <option value="">Khulna</option>
+                                            <option value="">Barisal</option>
+                                            <option value="">Rangur</option>
+                                        </select>
+                                    </div>
+                                    <div class=" border border-Pigment px-2 rounded-sm py-2 mt-5 ">
+                                        <select class="w-full focus:outline-none border-none  text-Rusian-Black" name=""
+                                            id="">
+                                            <option value="">City</option>
+                                            <option value="">City 1</option>
+                                            <option value="">City 1</option>
+                                            <option value="">City 1</option>
+                                            <option value="">City 1</option>
+                                            <option value="">City 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <button
+                                            class=" w-full text-white py-2 bg-Pigment mt-5 font-semibold rounded-sm hover:bg-Rusian-Black"
+                                            type="submit">
+                                            Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="px-3 py-5 border border-Rusian-Black mt-10">
+                            <h2 class=" text-Rusian-Black text-lg  text-center font-semibold">Date Post</h2>
+                            <div class="">
+                                <form action="">
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last Hour
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last 24
+                                                    hours
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">11</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last week
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last 2
+                                                    weeks
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">40</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last
+                                                    month
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">All
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">80</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="px-3 py-5 border border-Rusian-Black mt-10">
+                            <h2 class=" text-Rusian-Black text-lg  text-center font-semibold">Sector</h2>
+                            <div class="">
+                                <form action="">
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last Hour
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last 24
+                                                    hours
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">11</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last week
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last 2
+                                                    weeks
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">40</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">Last
+                                                    month
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center  cursor-pointer mb-3 ">
+                                        <div class=" flex items-center ">
+                                            <div class="">
+                                                <input class=" border-none cursor-pointer" type="checkbox" id="" name=""
+                                                    value="">
+                                            </div>
+                                            <div class="">
+                                                <p class=" text-Rusian-Black text-lg ml-2  hover:text-Pigment">All
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class=" w-8 h-8 bg-Pigment rounded-full flex items-center justify-center">
+                                                <p class=" text-white text-base font-medium">80</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-9">
+                    <div class="grid grid-cols-3 gap-5">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ===============Side-bar-and content============= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="mt-96"></div>
+
+    <!-- ===========iconify=============== -->
+    <script src=" https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!-- ===============Swiper-js================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- ===============Jquary================ -->
+    <script src="./js/jquary.js"></script>
+    <!-- ===========Coustom-js============ -->
+    <script src="./js/coustom.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

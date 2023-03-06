@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============Google-font=============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- ============Google-font=============== -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/coustom.css">
+</head>
+
+<body>
+
+    <header>
+        <div class=" bg-white py-3">
+            <div class="container mx-auto">
+                <div class=" flex justify-between items-center">
+                    <div class="">
+                        <a href="#">
+                            <img class="w-52" src="./img/logo.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class=" flex items-center">
+                        <div class="">
+                            <a class=" bg-Pigment pt-1 pb-2 px-3 text-white  text-base rounded-md mr-3"
+                                href="login.html">Login</a>
+                        </div>
+                        <div class="">
+                            <a class=" bg-Black  pt-1 pb-2 px-3 text-white  text-base rounded-md"
+                                href="register.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==============Header-end================= -->
+
+    <nav>
+        <div class=" bg-Pigment py-2">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-12 items-center">
+                    <div class=" col-span-6">
+                        <ul class=" flex justify-between items-center">
+                            <li><a class="text-white text-lg font-semibold" href="#">Home</a></li>
+                            <li><a class="text-white text-lg font-semibold" href="#">About Us</a></li>
+                            <li><a class="text-white text-lg font-semibold" href="job.html">Jobs(100+)</a></li>
+                            <li><a class="text-white text-lg font-semibold" href="employers.html">Employers(20+)</a>
+                            </li>
+                            <li><a class="text-white text-lg font-semibold" href="#">Candidates(1000+)</a></li>
+                            <li><a class="text-white text-lg font-semibold" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-span-6 ">
+                        <div class=" flex  justify-end items-center">
+                            <div class="mt-2 mr-4">
+                                <div class="">
+                                    <button class=" text-3xl text-white ">
+                                        <iconify-icon icon="material-symbols:circle-notifications"></iconify-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a class="bg-white  text-Rusian-Black py-2 px-3  font-semibold rounded-md "
+                                    href="#">Post
+                                    A Job +</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================Nav-end======================= -->
+
+    <div class=" flex  justify-center items-center w-full h-72 bg-cover bg-no-repeat "
+        style="background-image: url('./img/images.jpg');">
+        <div class="">
+            <h1 class=" font-sans text-4xl text-gray-200 font-bold">Jobs Listing</h1>
+        </div>
+
+
+    </div>
+
+    <!-- background cover page end -->
+
+
+    <!-- job post start -->
+    <div class="mx-auto container mt-16">
+
+        <div class="grid xl:grid-cols-4 lg:grid-cols-2 gap-6 md:grid-cols-2 sm:grid-cols-1">
+
+            <div>
+                <div class="grid col-span-1 border border-gray-400 shadow-xl">
+                    <h2 class="bg-red-500 text-white py-3 px-1 text-2xl text-center">Email Me New Jobs</h2>
+                    <input
+                        class=" m-2  border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                        placeholder="Job alert name......" type="text" name="search" />
+                    <input
+                        class=" m-2  border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                        placeholder="example@gmail.com" type="email" name="search" />
+
+
+
+
+                    <form class="m-2">
+
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">Daily </label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Weekly</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Fortnightly</label> <br>
+                        <input type="checkbox" id="vehicle34" name="vehicle3" value="Boat">
+                        <label for="vehicle4"> Monthly</label><br>
+                        <input type="checkbox" id="vehicle5" name="vehicle3" value="Boat">
+                        <label for="vehicle5"> Biannually</label><br>
+                        <input type="checkbox" id="vehicle6" name="vehicle3" value="Boat">
+                        <label for="vehicle6"> Annually</label> <br>
+                        <input type="checkbox" id="vehicle7" name="vehicle3" value="Boat">
+                        <label for="vehicle7"> Never</label>
+
+                    </form>
+
+                    <button class="text-white bg-red-400 m-3 px-3 py-3 text-1xl">CREATE ALERT</button>
+
+
+                </div>
+
+                <div class="mt-7 mb-5 grid col-span-1 border border-gray-400 shadow-xl">
+                    <div class="">
+                        <div class="relative w-[400px ]">
+                            <input type="checkbox" name="" id="input4" class="absolute peer opacity-0">
+
+                            <label class="font-bold tracking-[1px] mx-[20px] h-[50px] flex items-center"
+                                for="input4">Location</label>
+
+                            <!-- Arrow  -->
+                            <div
+                                class="flex justify-end absolute top-[15px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </div>
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+
+                                <h1 class="text-bold">Country</h1>
+                                <h1>City</h1>
+                                <h1>State</h1>
+                                <h1>City</h1>
+                                <h1>State</h1>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="mt-7 mb-5 grid col-span-1 border border-gray-400 shadow-xl">
+                    <div class="">
+                        <div class="relative w-[400px ]">
+                            <input type="checkbox" name="" id="input1" class="absolute peer opacity-0">
+
+                            <label class="font-bold tracking-[1px] mx-[20px] h-[50px] flex items-center"
+                                for="input1">Date Posted</label>
+
+                            <!-- Arrow  -->
+                            <div
+                                class="flex justify-end absolute top-[15px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </div>
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+
+                                <form class="m-2">
+
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1">Last Hour</label><br>
+                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                    <label for="vehicle2">Last 24 Hour</label><br>
+                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                    <label for="vehicle3"> Last Week</label> <br>
+                                    <input type="checkbox" id="vehicle34" name="vehicle3" value="Boat">
+                                    <label for="vehicle4"> Last 2 Week</label><br>
+                                    <input type="checkbox" id="vehicle5" name="vehicle3" value="Boat">
+                                    <label for="vehicle5"> Last Month</label><br>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="mt-7 mb-5 grid col-span-1 border border-gray-400 shadow-xl">
+                    <div class="">
+                        <div class="relative w-[400px ]">
+                            <input type="checkbox" name="" id="input2" class="absolute peer opacity-0">
+
+                            <label class="font-bold tracking-[1px] mx-[20px] h-[50px] flex items-center"
+                                for="input2">Job Type</label>
+
+                            <!-- Arrow  -->
+                            <div
+                                class="flex justify-end absolute top-[15px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </div>
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+
+                                <form class="m-2">
+
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1">Freelancer </label><br>
+                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                    <label for="vehicle2"> Full time</label><br>
+                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                    <label for="vehicle3"> Part time</label> <br>
+                                    <input type="checkbox" id="vehicle34" name="vehicle3" value="Boat">
+                                    <label for="vehicle4"> Temporary</label><br>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mt-7 mb-5 grid col-span-1 border border-gray-400 shadow-xl">
+
+                    <div class="">
+                        <div class="relative w-[400px ]">
+                            <input type="checkbox" name="" id="input3" class="absolute peer opacity-0">
+
+                            <label class="font-bold tracking-[1px] mx-[20px] h-[50px] flex items-center"
+                                for="input3">Sector</label>
+
+                            <!-- Arrow  -->
+                            <div
+                                class="flex justify-end absolute top-[15px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </div>
+                            <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+
+                                <form class="m-2">
+
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1">All</label><br>
+                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                    <label for="vehicle2"> Accounting</label><br>
+                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                    <label for="vehicle3"> Automotive Jobs</label> <br>
+                                    <input type="checkbox" id="vehicle34" name="vehicle3" value="Boat">
+                                    <label for="vehicle4"> Construction</label><br>
+                                    <input type="checkbox" id="vehicle5" name="vehicle3" value="Boat">
+                                    <label for="vehicle5"> Education Training</label><br>
+                                    <input type="checkbox" id="vehicle6" name="vehicle3" value="Boat">
+                                    <label for="vehicle6"> Facilities</label> <br>
+                                    <input type="checkbox" id="vehicle7" name="vehicle3" value="Boat">
+                                    <label for="vehicle7"> Marketing</label>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div>
+                    <label for="country">Salon Location</label> <br />
+                    <select className='input' id="country">
+                        <option value="country">Bangladesh</option>
+                        <option value="australia">Australia</option>
+                        <option value="usa">Usa</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+                    </select>
+
+                </div> -->
+            </div>
+
+
+            <div class="container grid col-span-3 border border-gray-400 shadow-xl">
+                <div class="container grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-2  ">
+
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center  ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-13-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="jobDetails.html" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-green-500 py-1 w-28 px-2 mt-5">FREELANCER</button>
+                        </div>
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-09-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+
+                            <button class="text-white bg-orange-400 py-1 px-2 w-28 mt-5">FULL TIME</button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-19-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-blue-400 py-1 px-2 w-28 mt-5">PART TIME</button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-08-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-red-500 py-1 px-2 mt-5 w-28">TEMPORARY</button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-18-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-blue-400 py-1 px-2 w-28 mt-5">PART TIME</button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-05-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-orange-400 py-1 px-2 w-28 mt-5">FULL TIME</button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-17-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-red-500 py-1 px-2 mt-5 w-28">TEMPORARY</button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-04-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-blue-400 py-1 px-2 w-28 mt-5">PART TIME</button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-15-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-orange-400 py-1 px-2 w-28 mt-5">FULL TIME</button>
+
+                        </div>
+
+
+                    </div>
+                    <div class="border shadow-lg m-2 p-4">
+                        <div>
+                            <div class="flex  items-center ">
+                                <img class="w-20"
+                                    src="https://careerfy.net/jobsonline/wp-content/uploads/employer-03-150x150.png"
+                                    alt="">
+                                <div>
+                                    <a href="#" class="text-black text-2xl">Need charted account</a>
+                                    <h2 class="text-red-500">Mix Digital Entertainment</h2>
+                                </div>
+                            </div>
+                            <h2 class="text-gray-500">Saurimo, Lunda Sul Province, Angola</h2>
+                            <h2 class="text-gray-500">Post Date : December 3, 2017</h2>
+                            <h3 class="text-gray-500">Automotive job</h3>
+                            <button class="text-white bg-red-500 py-1 px-2 mt-5 w-28">TEMPORARY</button>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- job post end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ===========iconify=============== -->
+    <script src=" https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!-- ===============Swiper-js================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- ===============Jquary================ -->
+    <script src="./js/jquary.js"></script>
+    <!-- ===========Coustom-js============ -->
+    <script src="./js/coustom.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>
